@@ -1,0 +1,347 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #687EFF;
+  --secondary-bg-color: #80B3FF;
+  --third-bg-color: #98E4FF;
+  --fourth-bg-color: #B6FFFA;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Common Sections classes  */
+.section-header {
+  text-align: center;
+  margin: 150px 0px;
+}
+
+.section-head {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section-subhead {
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+/* Section 1: Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px 20px;
+  background-color: var(--main-bg-color);
+  color: var(--white);
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navbar .cta-btn {
+  padding: 8px 16px;
+  background-color: var(--fourth-bg-color);
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Section 2: Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+   
+}
+
+.banner-left {
+  flex: 1;
+}
+
+.banner-right {
+  flex: 1;
+}
+
+.banner .heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner .subheading {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.banner .btn {
+  padding: 8px 16px;
+  background-color: var(--main-bg-color);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.banner .banner-right img{
+  border-radius: 10px;
+}
+/* Section 3: Our Client */
+
+.clients-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.clients-logo img {
+  height: 70px;
+  width: 70px;
+}
+
+/* Section 4: Power of Blockchain */
+ 
+
+.power-blockchain .power-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.power-blockchain .power-cards .power-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.power-blockchain .power-cards .power-card img {
+  height: 50px;
+  width: 50px;
+}
+
+.power-blockchain .power-cards .power-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.power-blockchain .power-cards .power-card p {
+  font-size: 14px;
+}
+
+/* Section 5: Helping Blockchain */
+.helping-blockchain {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 40px;
+  background: var(--fourth-bg-color);
+}
+
+.helping-blockchain .helping-blockchain-text {
+  width: 100%;
+  text-align: left;
+}
+
+
+.helping-blockchain .helping-blockchain-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  width: 100%;
+}
+
+.helping-blockchain .helping-blockchain-cards .helping-blockchain-card {
+
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.helping-blockchain .helping-blockchain-cards .helping-blockchain-card img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Section 6: Blockchain Future */
+.blockchain-future {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.blockchain-card {
+  height: 300px;
+  width: 300px;
+  background: var(--secondary-bg-color);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.blockchain-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.blockchain-card .blockchain-card-text {
+  background: var(--third-bg-color);
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  width: 250px;
+  left: 25px;
+  border-radius: 10px;
+}
+
+.blockchain-card .blockchain-card-text:hover {
+  background: var(--secondary-bg-color);
+  color: var(--white);
+}
+
+.blockchain-card .blockchain-card-text p {
+  padding: 20px;
+}
+
+.blockchain-card .blockchain-card-text a {
+  color: var(--main-bg-color);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Section 7: Contact Us */
+.contact-us {
+  display: flex;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.contact-us .image {
+  flex: 1;
+}
+
+.contact-us form {
+  flex: 1;
+}
+
+.contact-us input,
+.contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.contact-us button {
+  padding: 8px 16px;
+  background-color: var(--fourth-bg-color);
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Section 8: Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 100px 20px;
+  background-color: var(--main-bg-color);
+  color: white;
+}
+
+
+.footer .footer-logo .social-icons {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer .footer-logo .social-icons a {
+  padding: 0px 15px;
+}
+
+.footer .footer-logo .social-icons a img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.footer .footer-links h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  margin-left: 4px;
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0px;
+}
+
+.footer .footer-links ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer .footer-links form {
+  position: relative;
+}
+
+.footer .footer-links form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: var(--fourth-bg-color);
+  outline: none;
+}
+
+.footer .footer-links form button {
+  height: 20px;
+   border: none;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+background: none;
+}
+
+.footer .footer-links form button img {
+  height: 20px;
+}
